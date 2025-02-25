@@ -57,3 +57,18 @@ footer a img {
   padding: 4rem 1rem;
   min-height: 100vh;
 }
+
+.btn {
+  margin-top: 20px;
+  background-color: rgb(233, 152, 1);
+  color: black;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgba(233, 152, 1, 0.514);
+  color: white;
+  transition: 0.5s;
+}

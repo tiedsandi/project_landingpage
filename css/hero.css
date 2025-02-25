@@ -11,18 +11,3 @@
   font-size: 81px;
   text-align: center;
 }
-
-.hero-btn {
-  margin-top: 10px;
-  background-color: rgb(233, 152, 1);
-  color: black;
-  font-weight: bold;
-  padding: 16px 26px;
-  text-decoration: none;
-}
-
-.hero-btn:hover {
-  background-color: rgba(233, 152, 1, 0.514);
-  color: white;
-  transition: 0.5s;
-}
