@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+header,
+footer {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  z-index: 100;
+  /* background-color: rebeccapurple; */
+}
+
+/* ===== Header ===== */
+header {
+  top: 0;
+  left: 0;
+}
+
+header img {
+  width: 150px;
+}
+
+/* ===== Footer ===== */
+footer {
+  bottom: 0;
+  left: 0;
+}
+
+footer a img {
+  width: 25px;
+}
+
+/* section */
+section {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex-grow: 1;
+  height: 100%;
+  width: 1200px;
+  margin: 60px auto;
+  /* background-color: brown; */
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 168, 6);
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+
+  transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(195, 131, 11);
+}
+
+/* frame 1 */
+.hero .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  text-align: center;
+}
+
+.hero p {
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
