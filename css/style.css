@@ -99,29 +99,40 @@ section {
 }
 
 /* Frame 2 */
-.about-us .box {
+.about-us .box,
+.philosophy .box {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.about-us .box div:last-child,
+.philosophy .box div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.about-us img {
+.about-us img,
+.philosophy img {
   width: 100%;
 }
 
-.about-us .box div:first-child {
+.about-us .box div:first-child,
+.philosophy .box div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 28px;
 }
 
-.about-us h2 {
+.about-us h2,
+.philosophy h2 {
   font-size: 92px;
   font-weight: bold;
   letter-spacing: 3px;
 }
 
-.about-us p {
+.about-us p,
+.philosophy p {
   font-size: 18px;
   line-height: 200%;
 }
