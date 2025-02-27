@@ -97,3 +97,31 @@ section {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+/* Frame 2 */
+.about-us .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-us img {
+  width: 100%;
+}
+
+.about-us .box div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.about-us h2 {
+  font-size: 92px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 200%;
+}
