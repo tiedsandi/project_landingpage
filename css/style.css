@@ -57,6 +57,7 @@ section {
   /* background-color: teal; */
   display: flex;
   flex-direction: column;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .box {
@@ -79,6 +80,18 @@ section {
 
 .btn:hover {
   background-color: rgb(195, 131, 11);
+}
+
+.fade-in {
+  opacity: 1 !important;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
 }
 
 /* frame 1 */
