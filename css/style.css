@@ -111,7 +111,7 @@ section {
   text-transform: uppercase;
 }
 
-/* Frame 2 */
+/* Frame 2 & 3*/
 .about-us .box,
 .philosophy .box {
   display: grid;
@@ -148,4 +148,22 @@ section {
 .philosophy p {
   font-size: 18px;
   line-height: 200%;
+}
+
+/* Frame 4 */
+.hero-case .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-case h2 {
+  font-size: 160px;
+  text-transform: uppercase;
+  line-height: 90%;
+}
+
+.hero-case a {
+  font-weight: bold;
+  font-size: 20px;
 }
