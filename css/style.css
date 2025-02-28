@@ -220,3 +220,29 @@ section {
 .case-study .container .text .btn {
   display: inline-block;
 }
+
+/* Detail Case */
+
+.detail-study .box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 60px 0;
+}
+
+.detail-study h3 {
+  font-size: 42px;
+}
+
+.detail-study p {
+  font-size: 18px;
+}
+
+/* Hero Owner */
+.hero-owner .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
