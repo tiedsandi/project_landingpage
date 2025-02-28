@@ -75,26 +75,28 @@ section {
   background-color: rgb(255, 168, 6);
   padding: 0.8rem 1.6rem;
   font-weight: bold;
+  border: 1px solid transparent;
 
-  transition: background-color 0.5s;
+  transition: background-color 0.5s, border 0.5s;
 }
 
 .btn:hover {
   background-color: rgb(195, 131, 11);
+  border: 1px solid rgb(182, 182, 182);
 }
 
 .fade-in {
   opacity: 1 !important;
-  scale: 1;
+  /* scale: 1; */
   pointer-events: auto;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .fade-out {
   opacity: 0;
-  scale: 0;
+  /* scale: 0; */
   pointer-events: none;
-  transform: translateY(50px);
+  transform: translateY(1000px);
 }
 
 /* frame 1 */
@@ -237,6 +239,7 @@ section {
 
 .detail-study p {
   font-size: 18px;
+  line-height: 140%;
 }
 
 /* Hero Owner */
@@ -281,4 +284,70 @@ section {
   flex-direction: column;
   gap: 20px;
   font-size: 18px;
+  line-height: 140%;
+}
+
+/* map */
+.maps .box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+
+  position: relative;
+}
+
+.maps .info {
+  display: flex;
+  gap: 40px;
+}
+
+.maps .info h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.maps .info p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.maps form {
+  top: 0;
+  right: 3%;
+  position: absolute;
+  background-color: white;
+  color: #6e6e6e;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.maps form div {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.maps form .input {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.maps form input,
+select,
+option {
+  height: 30px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.custom-file-upload {
+  padding: 6px 12px;
+  cursor: pointer;
 }
